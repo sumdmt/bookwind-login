@@ -1,0 +1,150 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  color: black !important;
+}
+
+.container-fluid {
+  padding: 2%;
+  padding-left: 5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#thumbnail {
+  max-width: 80%;
+  max-height: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  --g: 1px;
+  --b: 4px;
+  --c: #ff3300;
+
+  padding: calc(var(--g) + var(--b));
+  --_c: #00000000 0 25%, var(--c) 0 40%;
+  --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+  background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
+    var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b), var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: 1s;
+  border-radius: 50px;
+}
+
+#thumbnail:hover {
+  --_p: 75%;
+  filter: grayscale(0%);
+}
+
+.left-bar {
+  flex: 3%;
+  position: relative;
+}
+
+.text {
+  padding-top: 100px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.bottom-header {
+  font-size: 80px;
+  position: absolute;
+  font-weight: 800;
+  margin-bottom: 300px;
+  top: 32%;
+  left: 15%;
+  color: white;
+}
+
+.right-bar {
+  flex: 3%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: 8%;
+  margin-left: 100px;
+  background-color: white;
+}
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.right-bar h2 {
+  color: black;
+  font-size: 50px;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  padding: 10px;
+  border: 0px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px;
+  display: block;
+}
+
+button {
+  width: 50%;
+  height: 55px;
+  padding: 10px;
+  background-color: #010101;
+  color: #fff;
+  border: none;
+  border-radius: 10px !important;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3f4040;
+}
+
+.logo-area {
+  padding: 50px;
+  box-sizing: content-box;
+}
+
+.logo {
+  margin-right: 130px;
+  box-sizing: content-box;
+
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.logo:hover {
+}
+
+.social-media-text {
+  padding-left: 20%;
+}
